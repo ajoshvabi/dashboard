@@ -9,7 +9,6 @@
   }
   .containerstyle{
     background-color: rgb(232, 237, 255);
-    /* height: 100dvh; */
   }
   #dropdown-basic {
     background-color: transparent !important;
@@ -39,4 +38,7 @@
   .profilepageimg{
     height: 8rem;
     width: 8rem;
+  }
+  .loader{
+    height: 100vh;
   }

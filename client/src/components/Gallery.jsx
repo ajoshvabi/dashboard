@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 import { GridLoader } from 'react-spinners';
 import "./dashboard.css";
 
-const Profile = () => {
+const Gallery = () => {
     const [loading, setLoading] = useState(true);
     useEffect(() => {
         setTimeout(() => {
@@ -42,17 +42,17 @@ const Profile = () => {
                                             </div>
                                         </Row>
                                     </Link>
-                                    <Link to='/profile' className=' text-decoration-none text-dark'>
+                                    <Link to='/profile' className=' text-decoration-none text-light'>
                                         <Row className=' ms-auto my-4'>
-                                            <div className='bg-light d-flex justify-content-start align-items-center ps-4 rounded-start-4 my-auto'>
+                                            <div className='bg-black d-flex justify-content-start align-items-center ps-4 rounded-start-4 my-auto'>
                                                 <img src="./assets/Support.png" alt="" className='img-fluid' />
                                                 <p className='my-auto mx-2 py-2'>Profile</p>
                                             </div>
                                         </Row>
                                     </Link>
                                     <Link to='/gallery' className=' text-decoration-none text-dark'>
-                                        <Row className='text-light ms-auto my-4'>
-                                            <div className='bg-black d-flex justify-content-start align-items-center ps-4  rounded-start-4 my-auto'>
+                                        <Row className='text-dark ms-auto my-4'>
+                                            <div className='bg-light d-flex justify-content-start align-items-center ps-4  rounded-start-4 my-auto'>
                                                 <img src="./assets/Puzzle.png" alt="" className='img-fluid' />
                                                 <p className='my-auto mx-2 py-2'>Gallery</p>
                                             </div>
@@ -86,7 +86,7 @@ const Profile = () => {
                                     </Col>
                                     <Col className=' d-flex justify-content-end px-lg-5 px-4 py-'>
                                         <Link to='/profile'>
-                                            <span className=' my-auto me-1 text-black fw-semibold  '>Admin</span><img src="./assets/media.png" alt="" className='img-fluid rounded-circle profile' />
+                                            <span className=' my-auto me-1 text-black fw-semibold  '>Admin</span> <img src="./assets/media.png" alt="" className='img-fluid rounded-circle profile' />
                                         </Link>                            </Col>
                                     <Col className='d-flex  justify-content-end d-block d-lg-none'>
                                         <Dropdown>
@@ -96,7 +96,7 @@ const Profile = () => {
                                             <Dropdown.Menu>
                                                 <Dropdown.Item href="/">Home</Dropdown.Item>
                                                 <Dropdown.Item href="/profile">Profile</Dropdown.Item>
-                                                <Dropdown.Item href="/gallery">Gallery</Dropdown.Item>
+                                                <Dropdown.Item href="#/action-3">Plugins</Dropdown.Item>
                                                 <Dropdown.Item href="#/action-3">Help</Dropdown.Item>
                                             </Dropdown.Menu>
                                         </Dropdown>
@@ -121,28 +121,52 @@ const Profile = () => {
                             </Col>
                             <Container className='bg-white px-lg-5 px-4 '>
                                 <Col className=' d-flex px-lg-2 '>
-                                    <Navbar.Brand><h5 className='my-auto fw-bolder  py-3'>Profile</h5></Navbar.Brand>
+                                    <Navbar.Brand><h5 className='my-auto fw-bolder  py-3'>Gallery</h5></Navbar.Brand>
                                 </Col>
                             </Container>
-                            <Container className='px-lg-5 px-4'>
-                                <Row className=' d-flex justify-content-center align-items-center m-lg-4 my-4'>
-                                    <Col xs={12} lg={9} className='bg-white shadow-lg rounded-5 py-3'>
-                                        <Col className=' d-flex px-lg-2 d-flex justify-content-center justify-content-md-start'>
-                                            <Navbar.Brand><h5 className='my-auto  py-4 '>User Profile</h5></Navbar.Brand>
-                                        </Col>
+                            <Container className=''>
+                                <Row className='  m-lg-4 my-4'>
+                                    <Col className='bg-white shadow-lg rounded-5 py-3 '>
                                         <Row>
-                                            <Col md={4} className='d-flex justify-content-center align-items-start mt-3 '>
-                                                <img src="./assets/media.png" alt="" className='img-fluid rounded-circle profilepageimg' />
+                                            <Col lg md={4} sm={6} xs={6} className='my-2 d-flex justify-content-center align-items-center'>
+                                                <img src="./assets/media.png" alt="" className=' img-fluid  rounded-4' />
                                             </Col>
-                                            <Col>
-                                                <h4 className=' fw-bold text-md-start text-center'>Ajosh V Abi</h4>
-                                                <h6 className=' text-black-50 text-md-start text-center'>About</h6>
-                                                <p>
-                                                    I'm passionate developer who works with the MERN stack, which involves using MongoDB, Express.js, React.js, and Node.js. I'm skilled in both creating the visual part of websites and the behind-thescenes coding. I really enjoy making websites look great and user-friendly. I'm always learning and excited to be part of a web development team.
-                                                </p>
-                                                <p><i class="fa-solid fa-envelope me-2"></i>:ajoajoshvabi@gmail.com</p>
-                                                <p><i class="fa-solid fa-phone me-2"></i>:+91 8089033549</p>
-                                                <p><i class="fa-solid fa-globe me-2"></i>:<a href="https://ajoshvabi.netlify.app/" target='_blank'>ajoshvabi.com</a></p>
+                                            <Col lg md={4} sm={6} xs={6} className='my-2 d-flex justify-content-center align-items-center'>
+                                                <img src="./assets/media.png" alt="" className=' img-fluid  rounded-4' />
+                                            </Col>
+                                            <Col lg md={4} sm={6} xs={6} className='my-2 d-flex justify-content-center align-items-center'>
+                                                <img src="./assets/media.png" alt="" className=' img-fluid  rounded-4' />
+                                            </Col>
+                                            <Col lg md={4} sm={6} xs={6} className='my-2 d-flex justify-content-center align-items-center'>
+                                                <img src="./assets/media.png" alt="" className=' img-fluid  rounded-4' />
+                                            </Col>
+                                        </Row>
+                                        <Row>
+                                            <Col lg md={4} sm={6} xs={6} className='my-2 d-flex justify-content-center align-items-center'>
+                                                <img src="./assets/media.png" alt="" className=' img-fluid  rounded-4' />
+                                            </Col>
+                                            <Col lg md={4} sm={6} xs={6} className='my-2 d-flex justify-content-center align-items-center'>
+                                                <img src="./assets/media.png" alt="" className=' img-fluid  rounded-4' />
+                                            </Col>
+                                            <Col lg md={4} sm={6} xs={6} className='my-2 d-flex justify-content-center align-items-center'>
+                                                <img src="./assets/media.png" alt="" className=' img-fluid  rounded-4' />
+                                            </Col>
+                                            <Col lg md={4} sm={6} xs={6} className='my-2 d-flex justify-content-center align-items-center'>
+                                                <img src="./assets/media.png" alt="" className=' img-fluid  rounded-4' />
+                                            </Col>
+                                        </Row>
+                                        <Row>
+                                            <Col lg md={4} sm={6} xs={6} className='my-2 d-flex justify-content-center align-items-center'>
+                                                <img src="./assets/media.png" alt="" className=' img-fluid  rounded-4' />
+                                            </Col>
+                                            <Col lg md={4} sm={6} xs={6} className='my-2 d-flex justify-content-center align-items-center'>
+                                                <img src="./assets/media.png" alt="" className=' img-fluid  rounded-4' />
+                                            </Col>
+                                            <Col lg md={4} sm={6} xs={6} className='my-2 d-flex justify-content-center align-items-center'>
+                                                <img src="./assets/media.png" alt="" className=' img-fluid  rounded-4' />
+                                            </Col>
+                                            <Col lg md={4} sm={6} xs={6} className='my-2 d-flex justify-content-center align-items-center'>
+                                                <img src="./assets/media.png" alt="" className=' img-fluid  rounded-4' />
                                             </Col>
                                         </Row>
                                     </Col>
@@ -156,4 +180,4 @@ const Profile = () => {
     );
 };
 
-export default Profile;
+export default Gallery;
