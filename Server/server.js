@@ -12,6 +12,7 @@ const tableData = [
   { id: 3, name: 'Item 3', quantity: 8, price: 15 },
   { id: 4, name: 'Item 4', quantity: 12, price: 30 },
   { id: 5, name: 'Item 5', quantity: 18, price: 22 },
+  { id: 6, name: 'Item 6', quantity: 28, price: 26 },
 ];
 
 app.get('/api/table', (req, res) => {
